@@ -1,0 +1,457 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="EntityFrameworks\Contexts\admin\css\maps\style.css.map" />
+    <None Remove="EntityFrameworks\Contexts\admin\css\style.css" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Black.eot" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Black.ttf" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Black.woff" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Black.woff2" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Bold.eot" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Bold.ttf" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Bold.woff" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Bold.woff2" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Light.eot" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Light.ttf" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Light.woff" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Light.woff2" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Medium.eot" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Medium.ttf" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Medium.woff" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Medium.woff2" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Regular.eot" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Regular.ttf" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Regular.woff" />
+    <None Remove="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Regular.woff2" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\adminpicture.png" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\adminWindow.png" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\asa.png" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\auth\lockscreen-bg.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\auth\login-bg.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\auth\register-bg.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face1.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face10.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face11.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face12.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face13.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face14.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face15.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face16.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face17.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face18.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face19.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face2.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face20.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face21.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face22.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face23.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face24.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face25.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face26.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face27.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face3.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face4.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face5.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face6.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face7.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face8.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\faces\face9.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\favicon.png" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\logo-mini.svg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\logo.svg" />
+    <None Remove="EntityFrameworks\Contexts\admin\images\software_village_cover.jpg" />
+    <None Remove="EntityFrameworks\Contexts\admin\js\chart.js" />
+    <None Remove="EntityFrameworks\Contexts\admin\js\Chart.min.js" />
+    <None Remove="EntityFrameworks\Contexts\admin\js\dashboard.js" />
+    <None Remove="EntityFrameworks\Contexts\admin\js\data-table.js" />
+    <None Remove="EntityFrameworks\Contexts\admin\js\dataTables.bootstrap4.js" />
+    <None Remove="EntityFrameworks\Contexts\admin\js\documentation.js" />
+    <None Remove="EntityFrameworks\Contexts\admin\js\file-upload.js" />
+    <None Remove="EntityFrameworks\Contexts\admin\js\hoverable-collapse.js" />
+    <None Remove="EntityFrameworks\Contexts\admin\js\jquery.dataTables.js" />
+    <None Remove="EntityFrameworks\Contexts\admin\js\off-canvas.js" />
+    <None Remove="EntityFrameworks\Contexts\admin\js\tabs.js" />
+    <None Remove="EntityFrameworks\Contexts\admin\js\template.js" />
+    <None Remove="EntityFrameworks\Contexts\admin\vendors\base\vendor.bundle.base.css" />
+    <None Remove="EntityFrameworks\Contexts\admin\vendors\base\vendor.bundle.base.js" />
+    <None Remove="EntityFrameworks\Contexts\admin\vendors\chart.js\Chart.min.js" />
+    <None Remove="EntityFrameworks\Contexts\admin\vendors\datatables.net-bs4\dataTables.bootstrap4.css" />
+    <None Remove="EntityFrameworks\Contexts\admin\vendors\datatables.net-bs4\dataTables.bootstrap4.js" />
+    <None Remove="EntityFrameworks\Contexts\admin\vendors\datatables.net\jquery.dataTables.js" />
+    <None Remove="EntityFrameworks\Contexts\admin\vendors\mdi\css\materialdesignicons.min.css" />
+    <None Remove="EntityFrameworks\Contexts\admin\vendors\mdi\fonts\materialdesignicons-webfont.eot" />
+    <None Remove="EntityFrameworks\Contexts\admin\vendors\mdi\fonts\materialdesignicons-webfont.svg" />
+    <None Remove="EntityFrameworks\Contexts\admin\vendors\mdi\fonts\materialdesignicons-webfont.ttf" />
+    <None Remove="EntityFrameworks\Contexts\admin\vendors\mdi\fonts\materialdesignicons-webfont.woff" />
+    <None Remove="EntityFrameworks\Contexts\admin\vendors\mdi\fonts\materialdesignicons-webfont.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="EntityFrameworks\Contexts\admin\css\maps\style.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\css\style.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Black.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Black.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Black.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Black.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Bold.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Bold.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Bold.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Bold.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Light.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Light.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Light.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Light.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Medium.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Medium.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Medium.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Medium.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Regular.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Regular.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Regular.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\fonts\Roboto\Roboto-Regular.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\adminpicture.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\adminWindow.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\asa.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\auth\lockscreen-bg.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\auth\login-bg.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\auth\register-bg.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face10.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face11.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face12.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face13.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face14.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face15.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face16.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face17.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face18.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face19.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face20.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face21.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face22.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face23.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face24.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face25.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face26.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face27.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face6.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face7.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face8.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\faces\face9.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\favicon.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\logo-mini.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\logo.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\images\software_village_cover.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\js\chart.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\js\Chart.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\js\dashboard.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\js\data-table.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\js\dataTables.bootstrap4.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\js\documentation.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\js\file-upload.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\js\hoverable-collapse.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\js\jquery.dataTables.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\js\off-canvas.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\js\tabs.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\js\template.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\vendors\base\vendor.bundle.base.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\vendors\base\vendor.bundle.base.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\vendors\chart.js\Chart.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\vendors\datatables.net-bs4\dataTables.bootstrap4.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\vendors\datatables.net-bs4\dataTables.bootstrap4.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\vendors\datatables.net\jquery.dataTables.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\vendors\mdi\css\materialdesignicons.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\vendors\mdi\fonts\materialdesignicons-webfont.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\vendors\mdi\fonts\materialdesignicons-webfont.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\vendors\mdi\fonts\materialdesignicons-webfont.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\vendors\mdi\fonts\materialdesignicons-webfont.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="EntityFrameworks\Contexts\admin\vendors\mdi\fonts\materialdesignicons-webfont.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="EntityFrameworks\Contexts\admin\fonts\.DS_Store" />
+    <None Include="EntityFrameworks\Contexts\admin\fonts\Roboto\.DS_Store" />
+    <None Include="EntityFrameworks\Contexts\admin\images\.DS_Store" />
+    <None Include="EntityFrameworks\Contexts\admin\images\auth\.DS_Store" />
+    <None Include="EntityFrameworks\Contexts\admin\images\faces\.DS_Store" />
+    <None Include="EntityFrameworks\Contexts\admin\js\.DS_Store" />
+    <None Include="EntityFrameworks\Contexts\admin\vendors\.DS_Store" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FruitableShop.Entity\ShopECommerce.Entity.csproj" />
+  </ItemGroup>
+
+</Project>

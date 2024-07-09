@@ -1,0 +1,90 @@
+﻿@using ShopECommerce.BusinessLogic.Dtos.ContactDtos;
+@model ContactViewDto
+
+<style>
+    .custom-card {
+        padding: 20px;
+        margin: 10px;
+        border-radius: 20px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+        .custom-card .card-body {
+            padding: 20px;
+        }
+
+        .custom-card h4.card-title {
+            font-size: 2rem;
+        }
+
+        .custom-card .form-group label {
+            font-size: 1.25rem;
+        }
+
+        .custom-card .form-group input {
+            font-size: 1rem;
+            padding: 10px;
+        }
+
+        .custom-card .btn {
+            font-size: 1rem;
+            padding: 10px 20px;
+        }
+</style>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6 grid-margin stretch-card">
+            <div class="card custom-card">
+                <div class="card-body">
+                    <h4 class="card-title">Əlavə edin</h4>
+                    <form class="forms-sample" method="post" enctype="multipart/form-data">
+
+
+                        <div class="form-group">
+                            <label asp-for="AddressIcon">Adres Ikon</label>
+                            <input asp-for="AddressIcon" type="text" class="form-control" placeholder="Adres Ikon" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Address">Adres</label>
+                            <input asp-for="Address" type="text" class="form-control" placeholder="Başlıq" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="AddressText">Adres məzmunu</label>
+                            <input asp-for="AddressText" type="text" class="form-control" placeholder="Cəm" />
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="MailIcon">Email Ikonu</label>
+                            <input asp-for="MailIcon" type="text" class="form-control" placeholder="Adres Ikon" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Mail">Email</label>
+                            <input asp-for="Mail" type="text" class="form-control" placeholder="Başlıq" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="MailText">Email məzmunu</label>
+                            <input asp-for="MailText" type="text" class="form-control" placeholder="Cəm" />
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="TelephoneIcon">Telefon Ikon</label>
+                            <input asp-for="TelephoneIcon" type="text" class="form-control" placeholder="Adres Ikon" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Telephone">Telefon</label>
+                            <input asp-for="Telephone" type="text" class="form-control" placeholder="Başlıq" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="TelephoneText">Telefon məzmunu</label>
+                            <input asp-for="TelephoneText" type="text" class="form-control" placeholder="Cəm" />
+                        </div>
+
+                        <button type="submit" class="btn btn-primary me-2">Submit</button>
+                        <button type="button" class="btn btn-light">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

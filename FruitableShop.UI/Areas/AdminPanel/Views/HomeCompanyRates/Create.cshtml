@@ -1,0 +1,64 @@
+﻿@using ShopECommerce.BusinessLogic.Dtos.HomeDtos;
+@model Home_CompanyRatesViewDto
+
+<style>
+    .custom-card {
+        padding: 20px;
+        margin: 10px;
+        border-radius: 20px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+        .custom-card .card-body {
+            padding: 20px;
+        }
+
+        .custom-card h4.card-title {
+            font-size: 2rem;
+        }
+
+        .custom-card .form-group label {
+            font-size: 1.25rem;
+        }
+
+        .custom-card .form-group input {
+            font-size: 1rem;
+            padding: 10px;
+        }
+
+        .custom-card .btn {
+            font-size: 1rem;
+            padding: 10px 20px;
+        }
+</style>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6 grid-margin stretch-card">
+            <div class="card custom-card">
+                <div class="card-body">
+                    <h4 class="card-title">Əlavə edin</h4>
+                    <form class="forms-sample" method="post" enctype="multipart/form-data">
+
+
+                        <div class="form-group">
+                            <label asp-for="Icon">Ikon</label>
+                            <input asp-for="Icon" type="text" class="form-control" placeholder="Ikon" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Title">Başlıq</label>
+                            <input asp-for="Title" type="text" class="form-control" placeholder="Başlıq" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Sum">Cəm</label>
+                            <input asp-for="Sum" type="text" class="form-control" placeholder="Cəm" />
+                        </div>
+
+                        <button type="submit" class="btn btn-primary me-2">Submit</button>
+                        <button type="button" class="btn btn-light">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

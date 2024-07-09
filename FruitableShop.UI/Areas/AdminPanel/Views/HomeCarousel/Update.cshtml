@@ -1,0 +1,34 @@
+﻿@using ShopECommerce.BusinessLogic.Dtos.HomeDtos;
+@model Home_CarouselViewDto
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Redaktə edin</h4>
+                        <form class="forms-sample" method="post" enctype="multipart/form-data">
+                            <div>
+                                <img src="~/assets/img/@Model.Image" alt="Current Image" />
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Photo">Şəkil</label>
+                                <input asp-for="Photo" type="file" class="form-control" placeholder="Şəkil" />
+                                <span asp-validation-for="Photo"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Title">Başlıq</label>
+                                <input asp-for="Title" type="text" class="form-control" value="@Model.Title" placeholder="Başlıq" />
+                            </div>
+
+                            <button type="submit" class="btn btn-primary me-2">Submit</button>
+                            <button class="btn btn-light">Cancel</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

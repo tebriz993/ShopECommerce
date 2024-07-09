@@ -1,0 +1,35 @@
+﻿@using ShopECommerce.BusinessLogic.Dtos.HomeDtos;
+@model Home_ServicesViewDto
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Redaktə edin</h4>
+                        <form class="forms-sample" method="post" enctype="multipart/form-data">
+
+                            <div class="form-group">
+                                <label asp-for="Icon">Ikon</label>
+                                <input asp-for="Icon" type="text" class="form-control" value="@Model.Icon" placeholder="Ikon" />
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Title">Başlıq</label>
+                                <input asp-for="Title" type="text" class="form-control" value="@Model.Title" placeholder="Başlıq" />
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Subtitle">Altbaşlıq</label>
+                                <input asp-for="Subtitle" type="text" class="form-control" value="@Model.Subtitle" placeholder="Altbaşlıq" />
+                            </div>
+
+                            <button type="submit" class="btn btn-primary me-2">Submit</button>
+                            <button class="btn btn-light">Cancel</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+﻿@using ShopECommerce.BusinessLogic.Dtos.TestimonialDtos
+@model TestimonialViewDto
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Redaktə edin</h4>
+                        <form class="forms-sample" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label asp-for="Subtitle">Altbaşlıq</label>
+                                <input asp-for="Subtitle" type="text" class="form-control" value="@Model.Subtitle" placeholder="Altbaşlıq" />
+                            </div>
+                            <div>
+                                <img src="~/assets/img/@Model.Image" alt="Current Image" />
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Photo">Şəkil</label>
+                                <input asp-for="Photo" type="file" class="form-control" placeholder="Şəkil" />
+                                <span asp-validation-for="Photo"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Name">Ad</label>
+                                <input asp-for="Name" type="text" class="form-control" value="@Model.Name" placeholder="Ad" />
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="ProfessionId">Vəzifələr</label>
+                                <select asp-for="ProfessionId" class="form-control">
+                                    <option selected disabled>Seçim</option>
+                                    @foreach (var item in ViewBag.Professions)
+                                    {
+                                        <option value="@item.Id">@item.ProfessionName</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="ProfessionId"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary me-2">Submit</button>
+                            <button type="button" class="btn btn-light">Cancel</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

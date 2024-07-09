@@ -1,0 +1,100 @@
+﻿@using ShopECommerce.BusinessLogic.Dtos.HomeDtos;
+@model IEnumerable<Home_ServicesViewDto>
+
+@{
+    int count = 1;
+}
+
+<style>
+    .custom-card {
+        padding: 20px;
+        margin: 10px;
+        border-radius: 20px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+        .custom-card .card-body {
+            padding: 20px;
+        }
+
+        .custom-card h4.card-title {
+            font-size: 2rem;
+        }
+
+        .custom-card .table {
+            margin-top: 20px;
+            font-size: 1.25rem;
+        }
+
+            .custom-card .table th,
+            .custom-card .table td {
+                padding: 20px;
+            }
+
+        .custom-card .btn {
+            font-size: 1rem;
+            padding: 10px 20px;
+        }
+
+            .custom-card .btn i {
+                font-size: 1.2rem;
+            }
+
+        .custom-card img {
+            transition: transform 0.9s ease-in-out;
+        }
+
+            .custom-card img:hover {
+                transform: scale(5);
+            }
+</style>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card shadow-sm custom-card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="card-title mb-0">Xidmətlərimiz</h4>
+                        <a asp-controller="HomeServices" asp-action="Create" class="btn btn-info">Əlavə edin</a>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Sıra Nömrəsi</th>
+                                    <th scope="col">Ikon</th>
+                                    <th scope="col">Başlıq</th>
+                                    <th scope="col">Cəm</th>
+                                    <th scope="col">Ayarlar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var services in Model)
+                                {
+                                    <tr>
+                                        <td>@(count++)</td>
+                                        <td>@services.Icon</td>
+                                        <td>@services.Title</td>
+                                        <td>@services.Subtitle</td>
+                                        <td>
+                                            <a asp-controller="HomeServices" asp-action="Update" asp-route-id="@services.Id" class="btn btn-warning btn-sm">
+                                                <i class="mdi mdi-grease-pencil"></i>
+                                            </a>
+                                            <a asp-controller="HomeServices" asp-action="Delete" asp-route-id="@services.Id" class="btn btn-danger btn-sm">
+                                                <i class="mdi mdi-delete"></i>
+                                            </a>
+
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
